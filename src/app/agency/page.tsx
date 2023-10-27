@@ -33,8 +33,8 @@ export default function Agency() {
       <h2>This is the page for the Agencies.</h2>
       <br />
       <ul>
-        {requestsMock.map((request: CompetitiveReportRequests) => {
-          return <li>{request.RequestID}</li>
+        {requestsMock.map((request: CompetitiveReportRequests, index) => {
+          return <li key={index}> {request.RequestID}</li>
         })}
       </ul>
     </div>
